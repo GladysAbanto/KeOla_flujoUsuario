@@ -1,0 +1,45 @@
+.fondo-verificacion {
+  background-color: #ffa500;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.tarjeta-verificacion {
+  width: 350px;
+  border-radius: 20px;
+  margin: auto;
+}
+.tarjeta-titulo1 {
+  background-color: black;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+.texto-verificacion a {
+  text-decoration: none;
+  color: #ee710c;
+}
+.input-verificar {
+  background: #f5f5f5;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 35px;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  font-size: 15px;
+}
+.btn-validar {
+  background-color: #ee710c;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 2px;
+  border: #ee710c;
+  width: 300px;
+  margin: auto;
+}

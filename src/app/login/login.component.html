@@ -1,0 +1,56 @@
+<div class="fondo-login pt-3">
+  <div class="row justify-content-center">
+    <div class="tarjeta-login">
+      <div class="card tarjeta py-2 px-2">
+        <div class="card-body">
+          <div class="d-flex flex-column justify-content-center text-center">
+            <img
+              class="img-logo-sombra"
+              src="assets/img/logo-sombra.png"
+              alt=""
+            />
+            <h5 class="mb-4">INICIA SESION</h5>
+          </div>
+          <div class="d-flex justify-content-between gap-5">
+            <button class="btn btn-fb caja-redes">
+              <img class="img-redes" src="assets/img/fb-icon.png" alt="" />
+            </button>
+
+            <button class="btn btn-gmail caja-redes">
+              <img class="img-redes" src="assets/img/gmail-icon.png" alt="" />
+            </button>
+          </div>
+          <form class="d-flex flex-column mt-4">
+            <label for="usuario">
+              <i class="fa-solid fa-user"></i> Usuario
+            </label>
+            <input class="mt-2 mb-3 input-form" id="usuario" type="text" />
+
+            <label for="contraseña">
+              <i class="fa-solid fa-unlock-keyhole"></i> Contraseña</label
+            >
+            <input class="mt-2 input-form" id="contraseña" type="text" />
+            <br />
+            <button class="btn btn-iniciar-sesion" [routerLink]="['/inicio']">
+              INICIAR SESION
+            </button>
+          </form>
+          <div class="row text-center mt-3">
+            <a class="link-login" [routerLink]="['/restablecimiento']"
+              >¿Olvidas tu contraseña?</a
+            >
+            <a class="link-login" [routerLink]="['/registro']"
+              >¿No estás registrado?</a
+            >
+            <a class="link-login" href="">Iniciar como invitado</a>
+            <a
+              class="link-terminos"
+              href=" https://keolaweb-71b44.web.app/tyc-general"
+              >Términos y condiciones - Políticas de privacidad</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

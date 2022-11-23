@@ -1,0 +1,29 @@
+<div class="fondo-verificacion">
+  <div class="card tarjeta-verificacion">
+    <div class="card-header tarjeta-titulo1">
+      <h5>VERIFICACION</h5>
+    </div>
+    <div class="card-body text-center mt-4">
+      <p>
+        El código de verificación que nosotros enviamos a
+        Keoladocumentacion@gmail.com
+      </p>
+      <form class="d-flex flex-column mt-4 mb-3 text-center" action="">
+        <input
+          class="input-verificar"
+          type="text"
+          placeholder="Código de verificación"
+        />
+
+        <button class="btn btn-validar mt-4" [routerLink]="['/inicio']">
+          VALIDAR
+        </button>
+      </form>
+      <div class="texto-verificacion text-center">
+        <a href="">Reenviar código por email</a>
+        <br />
+        <a href="">Regresar a inicio</a>
+      </div>
+    </div>
+  </div>
+</div>

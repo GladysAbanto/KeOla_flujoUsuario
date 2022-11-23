@@ -1,0 +1,48 @@
+.fondo-registro {
+  background-color: #ffa500;
+  width: 100%;
+  height: 100vh;
+  padding-top: 15px;
+}
+.tarjeta-registro {
+  width: 350px;
+  margin: auto;
+  border-radius: 20px;
+}
+.tarjeta-titulo {
+  background-color: black;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+.input-registro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.input-registro label {
+  font-weight: 500;
+}
+.input-registro input {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  padding: 3px;
+  border-radius: 8px;
+}
+.text-politica {
+  font-size: 12px;
+  text-align: justify;
+}
+.text-terminos {
+  text-align: center;
+  text-decoration: none;
+  color: #ee710c;
+}
+.btn-registro {
+  background-color: #ee710c;
+  color: white;
+  font-weight: 450;
+  width: 250px;
+  font-size: 20px;
+}

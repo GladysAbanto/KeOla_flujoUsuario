@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-lg bg-white nav-perfil">
+  <div class="container-fluid">
+    <img src="assets/img/logo-sombra.png" alt="" />
+
+    <div class="collapse navbar-collapse" id="navbarScroll"></div>
+  </div>
+</nav>
+<div class="d-flex">
+  <div
+    class="flex-shrink-0 p-3 bg-perfil"
+    style="width: 280px; height: calc(100vh-55px)"
+  >
+    <ul class="list-unstyled ps-0">
+      <li>
+        <button
+          class="btn align-items-center rounded collapsed"
+          [routerLink]="['/inicio']"
+        >
+          Inicio
+        </button>
+      </li>
+
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#home-collapse"
+          aria-expanded="true"
+        >
+          Perfil
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a href="#" class="link-dark rounded" [routerLink]="['/perfil']"
+                >Actualizar Datos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-dark rounded"
+                [routerLink]="['/modificacion']"
+                >Modificar contraseña</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="contenedor w-100">
+    <div class="fondo-modificacion">
+      <div class="modificacion-caja">
+        <div class="modificacion-portada">
+          <div class="d-flex text-center">
+            <div>
+              <h5 class="mt-2 mb-3">Modificacion de contraseña</h5>
+              <p>
+                Por favor, introduzca una nueva contraseña. Para recuperar tu
+                acceso en KeOla App. correo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="formulario-modificacion mt-4">
+          <form action="" class="d-flex flex-column">
+            <label class="label-form-perfil" for="">Contraseña</label>
+            <input class="input-modificacion" type="text" />
+            <label class="label-form-perfil mt-3" for=""
+              >Confirmar constraseña</label
+            >
+            <input class="input-modificacion" type="text" />
+
+            <button class="btn btn-modificar mt-4">
+              Actualizar contraseña
+            </button>
+          </form>
+          <p class="text-soporte text-center mt-4">
+            Si aún necesitas ayuda ponte en contacto con el
+            <a href=""> soporte KeOla</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg bg-white nav-perfil">
+  <div class="container-fluid">
+    <img src="assets/img/logo-sombra.png" alt="" />
+
+    <div class="collapse navbar-collapse" id="navbarScroll"></div>
+  </div>
+</nav>
+<div class="d-flex">
+  <div
+    class="flex-shrink-0 p-3 bg-perfil"
+    style="width: 280px; height: calc(100vh-55px)"
+  >
+    <ul class="list-unstyled ps-0">
+      <li>
+        <button
+          class="btn align-items-center rounded collapsed"
+          [routerLink]="['/inicio']"
+        >
+          Inicio
+        </button>
+      </li>
+
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#home-collapse"
+          aria-expanded="true"
+        >
+          Perfil
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a href="#" class="link-dark rounded" [routerLink]="['/perfil']"
+                >Actualizar Datos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-dark rounded"
+                [routerLink]="['/modificacion']"
+                >Modificar contraseña</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="contenedor w-100">
+    <div class="fondo-perfil">
+      <div class="perfil-caja">
+        <div class="perfil-portada">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h4>Mi perfil</h4>
+              <p>Actualiza tus datos personales</p>
+              <span class="rango-perfil">RANGO VIP</span>
+            </div>
+            <img src="assets/img/6073874.png" alt="" />
+          </div>
+        </div>
+        <div class="formulario-perfil mt-4">
+          <form action="" class="d-flex flex-column">
+            <label class="label-form-perfil" for="">Nombres</label>
+            <input class="input-form-perfil" type="text" />
+            <label class="label-form-perfil" for="">Apellidos</label>
+            <input class="input-form-perfil" type="text" />
+            <label class="label-form-perfil" for="">E-mail</label>
+            <input class="input-form-perfil" type="email" />
+            <label class="label-form-perfil" for="">Celular</label>
+            <input class="input-form-perfil" type="number" />
+            <label class="label-form-perfil" for="">Fecha de Nacimiento</label>
+            <input class="input-form-perfil" type="number" />
+            <button class="btn btn-perfil mt-4">Actualizar mis datos</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

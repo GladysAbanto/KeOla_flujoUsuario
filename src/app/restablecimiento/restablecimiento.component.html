@@ -1,0 +1,30 @@
+<div class="fondo-restablecimiento">
+  <div class="card tarjeta-restablecimiento">
+    <div class="card-body">
+      <h5 class="mt-4 text-center">Restablecimiento de constraseña</h5>
+      <p class="text-restablecer">
+        Pon tu <b>dirección de correo electrónico</b> que usaste para
+        registrarte.
+      </p>
+      <p class="text-restablecer">
+        Te enviaremos un mensaje con tu nombre de usuario y un código para
+        restablecer tu contraseña.
+      </p>
+      <form class="d-flex flex-column gap-4" action="">
+        <label for=""
+          >Dirección de correo electrónico o nombre de usuario</label
+        >
+        <input class="input-restablecer" type="text" />
+        <button class="btn-enviar">ENVIAR</button>
+      </form>
+      <a class="text-inicio mt-3" [routerLink]="['/login']"
+        >Regresar a inicio</a
+      >
+
+      <p class="text-soporte">
+        Si aún necesitas ayuda ponte en contacto con el
+        <a href=""> soporte KeOla</a>
+      </p>
+    </div>
+  </div>
+</div>
